@@ -1,15 +1,34 @@
 import '../styles/Header.scss';
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
-function Header() {
+
+function Header({searchPlant, setSearchPlant}) {
+    const navigate = useNavigate();
+
+  const handleClickSubmit = (event) => {
+    setSearchPlant(event.target.value)
+    navigate("/plants");
+  }
+
   return (
     <header>
       <div className="header_top">
         <Link to="/" className="h1_link"><h1>Catcus</h1></Link>
         <h2>Discover if a plant is toxic for your cats</h2>
-        <form action="">
-          <input type="text" placeholder="Is this plant toxic for my cats?"/>
+
+
+        <form className="search" action="">
+          <input 
+          className="search-field"
+          autoComplete="off"
+          type="search"
+          name="search"
+          placeholder="Is this plant toxic for my cats?"
+          value={searchPlant}
+          onChange={handleClickSubmit}/>
+          
           <input type="submit" />
         </form>
       </div>

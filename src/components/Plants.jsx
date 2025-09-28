@@ -6,25 +6,30 @@ import { IoIosWater } from "react-icons/io";
 import { MdLightMode } from "react-icons/md";
 import { SiGoogleanalytics } from "react-icons/si";
 
-function Plants({plants}) {
+function Plants({filteredPlants, resetFilter}) {
 const navigate = useNavigate(); //Es un hook, por lo que debes crear un componente para usarlo. No puedes usarlo directamente. 
+
+const handleBack = () => {
+  resetFilter();
+  navigate(-1);
+}
   
   return (
     <>
     <ul>
       {
-        plants.map((plant, index ) => {
+        filteredPlants.map((plant, index ) => {
           return (
   
-            <li class="card" key={index} id={plant.id}>
-              <div class={'card__image' + (plant.toxicForCats ? ' toxic' : ' noToxic')}>
+            <li className="card" key={index} id={plant.id}>
+              <div className={'card__image' + (plant.toxicForCats ? ' toxic' : ' noToxic')}>
                 <img src={plant.image} alt="" />
               </div>
-              <div class="card__titles">
+              <div className="card__titles">
                 <h1>{plant.name.en}</h1>
                 <h2>{plant.scientificName}</h2>
               </div>
-              <div class="card__description"> 
+              <div className="card__description"> 
                 <p>{plant.description.en}</p>
                 <p><strong>Toxicity Level: </strong>{plant.toxicityLevel}</p>
                 <p><strong>Symptoms: </strong>{plant.effectsOnCats.en}</p>
@@ -51,7 +56,7 @@ const navigate = useNavigate(); //Es un hook, por lo que debes crear un componen
       <HiArrowCircleLeft
       size="50px" 
       color="#ccc" 
-      onClick={() => navigate(-1)}
+      onClick={handleBack}
       style={{ cursor: "pointer" }}
       />
       
