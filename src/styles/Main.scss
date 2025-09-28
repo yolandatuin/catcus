@@ -1,0 +1,222 @@
+@use './variables' as *;
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.li_link {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.all-clickable {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/*COMMON PLANTS*/
+.main__ul_common {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    p {
+        margin: 0.5rem;
+        
+    }
+}
+.main__common {
+    width: 100px;
+    height: 100px;
+    background-size:cover;
+    background-blend-mode: multiply; 
+    background-color: $yellow-light;
+    background-repeat: no-repeat; 
+    padding: 0;
+    border-radius: 0.5rem;
+}
+
+.monstera-deliciosa {
+    background-image: url('../assets/preview/monstera-deliciosa.png');
+    background-position-y: 30px;
+}
+.ficus-lyrata {
+    background-image: url('../assets/preview/ficus-lyrata.png');
+    background-position-x: 25px;
+    
+    
+}
+.ficus-elastica {
+    background-image: url('../assets/preview/ficus_elastica.png');
+        background-position-x: 25px;
+
+
+}
+.lavanda {
+    background-image: url('../assets/preview/lavanda.png');
+}
+.monstera-deliciosa {
+    background-image: url('../assets/preview/monstera-deliciosa.png');
+    background-position-y: 50px;
+}
+
+.sterlitizia {
+    background-image: url('../assets/preview/sterilitzia.png');
+    background-clip: content-box;
+
+}
+
+
+/*RECENT SEARCH LIST*/
+.main__recent h3, .main__recent li {
+    position: relative;
+    z-index: 2;
+}
+.main__ul_recent-search {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main__recent {
+    position: relative;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 100px;
+
+    h3 {
+        font-size: 1rem;
+    }
+    li {
+        font-size: 0.75rem;
+    }
+
+}
+.main__ul_recent-search .main__recent:nth-child(odd) {
+  background-color: $purple-light; 
+}
+
+.main__ul_recent-search .main__recent:nth-child(even) {
+  background-color: $yellow-light; 
+}
+
+
+
+
+
+/* Silueta por encima */
+.main__recent::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  
+  
+  /* Aquí sí aplicamos la máscara */
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: 100% 100%;
+
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    mask-position: center;
+    border-radius: 0.5rem;
+    }
+
+/* cada planta, diferente perfil */
+.main__recent.aloe-vera::after {
+    -webkit-mask-image: url('../assets/preview/aloe-vera.png');
+    mask-image: url('../assets/preview/aloe-vera.png');
+    }  
+
+.main__recent.areca-palm::after {
+    -webkit-mask-image: url('../assets/preview/areca-palm.png');
+    mask-image: url('../assets/preview/areca-palm.png');
+    } 
+  
+.main__recent.ficus-elastica::after {
+    -webkit-mask-image: url('../assets/preview/ficus-elastica.png');
+    mask-image: url('../assets/preview/ficus-elastica.png');
+    }     
+
+.main__recent.ficus-lyrata::after {
+    -webkit-mask-image: url('../assets/preview/ficus-lyrata.png');
+    mask-image: url('../assets/preview/ficus-lyrata.png');
+    }     
+
+.main__recent.spider-plant::after {
+    -webkit-mask-image: url('../assets/preview/spider-plant.png');
+    mask-image: url('../assets/preview/spider-plant.png');
+    }  
+
+.main__recent.peace-lily::after {
+    -webkit-mask-image: url('../assets/preview/peace-lily.png');
+    mask-image: url('../assets/preview/peace-lily.png');
+    }  
+
+.main__recent.pothus::after {
+    -webkit-mask-image: url('../assets/preview/pothus.png');
+    mask-image: url('../assets/preview/pothus.png');
+    }  
+
+  .main__ul_recent-search .main__recent:nth-child(odd)::after {
+  background-color: $principal-purple; /* color para los impares */
+}
+
+.main__ul_recent-search .main__recent:nth-child(even)::after {
+  background-color: $principal-yellow; /* color para los pares */
+}
+
+ul .main__other {
+    background-color: blue;
+    width: 300px;
+}
+.main__other {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 0.5rem;
+    font-size: 10pt;
+    
+    li {
+        background-color: $principal-gray;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        flex: 120px;
+    }
+    li:hover {
+        background-color: $principal-green;
+    }
+}
+
+    .main__other-more {
+        background-color: $principal-green;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+        float: right;
+    }
+    .main__other-more:hover {
+        background-color: $principal-purple;
+    }
+
+    footer {
+        font-size: 10pt;
+        text-align: center;
+        margin-top: 20pt;
+        margin-bottom: 5pt;
+    }

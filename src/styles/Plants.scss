@@ -1,0 +1,70 @@
+@use './variables' as *;
+
+.card {
+    display: grid;
+    justify-content:center;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 2rem;
+    grid-gap: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+@media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+}
+
+iconify-icon {
+ display: inline-block;
+ width: 1em;
+ height: 1em;
+}
+
+}
+
+.card__image {
+    
+    background-size:cover;
+    width: 400px;
+    height: 400px;
+    margin-right: 1rem;
+    border-radius: 3rem;
+    grid-column: 1;
+    grid-row: 2/3;
+
+    img {
+        width: 400px;
+        border-radius: 3rem;
+    }
+@media (min-width: 768px) {
+    grid-row: 1/3;
+}
+}
+
+.toxic {background-color: $purple-light;}
+.noToxic {background-color: $yellow-light;}
+
+
+ .card__description {
+    grid-column: 1;
+    grid-row: 3/3;
+@media (min-width: 768px) {
+    grid-column: 2;
+    grid-row: 2/3;
+}
+} 
+.card__titles {
+    grid-column: 1;
+    grid-row: 1/2;
+@media (min-width: 768px) {
+    grid-column: 2;
+    grid-row: 1/2;
+}
+}
+
+.plants_nav {
+    position: sticky;
+    bottom: 1rem;
+    right: 1rem;
+}

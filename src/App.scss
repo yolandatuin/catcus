@@ -1,0 +1,24 @@
+@use 'styles/Variables.scss' as *;
+
+
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+main {
+    padding: 2rem;
+}
+
+
+h1, h2, h3 {
+  font-family: "Rhodium Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+
