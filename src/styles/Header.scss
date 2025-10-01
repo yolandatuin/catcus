@@ -27,6 +27,12 @@
     padding: 0;
     margin: 0 2rem;
     color: black;
+    font-weight: bold;
+    }
+
+    img {
+        width: 80%;
+        max-height: 300px;
     }
 
     form {
@@ -35,3 +41,31 @@
 
 }
 
+.button-search {
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+    border: 0;
+    background-color: $principal-yellow;
+    font-size: 1.2rem;
+}
+
+.button-search:hover {
+    background-color: $principal-green;
+}
+
+.search-field {
+    border-radius: 1rem;
+    border: 1px;
+    background-color: transparent;
+    margin-right: 1rem;
+    padding: 0.25rem 0.5rem;
+    color: white;
+    border: solid 1px $principal-yellow;
+    max-width: 600px;
+    font-size: 1.2rem;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 1;
+}

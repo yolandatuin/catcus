@@ -34,10 +34,11 @@ const handleBack = () => {
                 <p><strong>Toxicity Level: </strong>{plant.toxicityLevel}</p>
                 <p><strong>Symptoms: </strong>{plant.effectsOnCats.en}</p>
                 <h3>How to Care</h3>
-                <p><strong><IoIosWater color="blue" size="30px"/> </strong>{plant.waterLevel}</p>
-                <p><strong><MdLightMode color="yellow" size="30px" /> </strong>{plant.sunLevel}</p>
-                <p><strong><SiGoogleanalytics color="yellow" size="30px"/> </strong>{plant.careDifficulty}</p>
-                  
+                <div className="plant-chars">
+                  <p><strong><IoIosWater color="#4682B4" size="30px"/> </strong>Water: {plant.waterLevel}</p>
+                  <p><strong><MdLightMode color="#FFCC00" size="30px" /> </strong>Light: {plant.sunLevel}</p>
+                  <p><strong><SiGoogleanalytics color="#89D63D" size="30px"/> </strong>Difficulty: {plant.careDifficulty}</p>
+                </div>  
 
               </div>
               

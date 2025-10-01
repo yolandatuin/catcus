@@ -48,6 +48,10 @@ a {
     border-radius: 0.5rem;
 }
 
+.main__common:hover {
+    background-color: $green-light;
+}
+
 .monstera-deliciosa {
     background-image: url('../assets/preview/monstera-deliciosa.png');
     background-position-y: 30px;
@@ -112,7 +116,9 @@ a {
 .main__ul_recent-search .main__recent:nth-child(even) {
   background-color: $yellow-light; 
 }
-
+.main__ul_recent-search .main__recent:hover {
+    background-color: $green-light;
+}
 
 
 
