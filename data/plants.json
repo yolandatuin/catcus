@@ -1,0 +1,576 @@
+[
+  {
+    "id": "aloe-vera",
+    "name": {
+      "es": "Aloe Vera",
+      "en": "Aloe Vera"
+    },
+    "toxicForCats": true,
+    "toxicityLevel": 3,
+    "effectsOnCats": {
+      "es": "Vómitos, diarrea, letargo.",
+      "en": "Vomiting, diarrhea, lethargy."
+    },
+    "description": {
+      "es": "Planta suculenta muy popular con propiedades medicinales y decorativas.",
+      "en": "A very popular succulent with both medicinal and decorative properties."
+    },
+    "careTips": {
+      "es": "Necesita mucha luz, incluso sol directo. Riego escaso, dejar secar la tierra entre riegos.",
+      "en": "Needs plenty of light, even direct sun. Water sparingly, let soil dry between waterings."
+    },
+    "warnings": {
+      "es": "Tóxica para gatos si ingieren la pulpa.",
+      "en": "Toxic to cats if the pulp is ingested."
+    },
+    "waterLevel": 1,
+    "sunLevel": 3,
+    "careDifficulty": 2,
+    "image": "images/aloe-vera.png",
+    "scientificName": "Aloe vera"
+  },
+  {
+    "id": "lavender",
+    "name": {
+      "es": "Lavanda",
+      "en": "Lavender"
+    },
+    "toxicForCats": true,
+    "toxicityLevel": 2,
+    "effectsOnCats": {
+      "es": "Náuseas, pérdida de apetito.",
+      "en": "Nausea, loss of appetite."
+    },
+    "description": {
+      "es": "Arbusto aromático usado en jardinería y aromaterapia, con flores lilas muy características.",
+      "en": "An aromatic shrub used in gardening and aromatherapy, with its characteristic purple flowers."
+    },
+    "careTips": {
+      "es": "Requiere sol directo y suelo bien drenado. Riego ocasional.",
+      "en": "Needs direct sun and well-drained soil. Water occasionally."
+    },
+    "warnings": {
+      "es": "Tóxica para gatos si la ingieren.",
+      "en": "Toxic to cats if ingested."
+    },
+    "waterLevel": 1,
+    "sunLevel": 3,
+    "careDifficulty": 3,
+    "image": "images/lavanda.png",
+    "scientificName": "Lavandula angustifolia"
+  },
+  {
+    "id": "areca-palm",
+    "name": {
+      "es": "Areca Palma",
+      "en": "Areca Palm"
+    },
+    "toxicForCats": false,
+    "toxicityLevel": 0,
+    "effectsOnCats": {
+      "es": "Ninguno.",
+      "en": "None."
+    },
+    "description": {
+      "es": "Palmera muy popular en interiores, con hojas largas y arqueadas que aportan un aspecto tropical.",
+      "en": "A popular indoor palm with long arching fronds that add a tropical touch."
+    },
+    "careTips": {
+      "es": "Prefiere luz indirecta brillante, riego frecuente y ambientes húmedos.",
+      "en": "Prefers bright indirect light, frequent watering, and humid environments."
+    },
+    "warnings": {
+      "es": "No es tóxica para gatos.",
+      "en": "Not toxic to cats."
+    },
+    "waterLevel": 3,
+    "sunLevel": 2,
+    "careDifficulty": 2,
+    "image": "images/areca-palm.png",
+    "scientificName": "Dypsis lutescens"
+  },
+  {
+    "id": "peace-lily",
+    "name": {
+      "es": "Lirio de la Paz",
+      "en": "Peace Lily"
+    },
+    "toxicForCats": true,
+    "toxicityLevel": 4,
+    "effectsOnCats": {
+      "es": "Salivación excesiva, vómitos, irritación oral.",
+      "en": "Excessive drooling, vomiting, oral irritation."
+    },
+    "description": {
+      "es": "Planta de interior muy común, apreciada por sus hojas verdes brillantes y flores blancas elegantes.",
+      "en": "A common houseplant, valued for its shiny green leaves and elegant white flowers."
+    },
+    "careTips": {
+      "es": "Necesita sombra parcial, riego regular y ambiente húmedo.",
+      "en": "Needs partial shade, regular watering, and a humid environment."
+    },
+    "warnings": {
+      "es": "Muy tóxica para gatos si ingieren hojas o flores.",
+      "en": "Highly toxic to cats if leaves or flowers are ingested."
+    },
+    "waterLevel": 3,
+    "sunLevel": 1,
+    "careDifficulty": 3,
+    "image": "images/peace-lily.png",
+    "scientificName": "Spathiphyllum wallisii"
+  },
+  {
+    "id": "spider-plant",
+    "name": {
+      "es": "Cinta (Chlorophytum comosum)",
+      "en": "Spider Plant"
+    },
+    "toxicForCats": false,
+    "toxicityLevel": 0,
+    "effectsOnCats": {
+      "es": "Ninguno.",
+      "en": "None."
+    },
+    "description": {
+      "es": "Planta resistente y fácil de cuidar, ideal para colgar por sus hojas largas arqueadas.",
+      "en": "Resilient and easy to care for, ideal for hanging due to its long arching leaves."
+    },
+    "careTips": {
+      "es": "Tolera poca luz, pero crece mejor con luz indirecta. Riego moderado.",
+      "en": "Tolerates low light but thrives in indirect light. Moderate watering."
+    },
+    "warnings": {
+      "es": "No es tóxica para gatos, aunque pueden jugar con sus hojas.",
+      "en": "Not toxic to cats, but they may play with its leaves."
+    },
+    "waterLevel": 2,
+    "sunLevel": 2,
+    "careDifficulty": 1,
+    "image": "images/spider-plant.png",
+    "scientificName": "Chlorophytum comosum"
+  },
+  {
+    "id": "rubber-plant",
+    "name": {
+      "es": "Ficus Elástica",
+      "en": "Rubber Plant"
+    },
+    "toxicForCats": true,
+    "toxicityLevel": 3,
+    "effectsOnCats": {
+      "es": "Vómitos, irritación oral, diarrea.",
+      "en": "Vomiting, oral irritation, diarrhea."
+    },
+    "description": {
+      "es": "Planta de interior muy resistente y popular por sus hojas grandes, gruesas y brillantes.",
+      "en": "A hardy indoor plant, popular for its large, thick, shiny leaves."
+    },
+    "careTips": {
+      "es": "Prefiere luz brillante indirecta, riego moderado y suelo bien drenado.",
+      "en": "Prefers bright indirect light, moderate watering, and well-draining soil."
+    },
+    "warnings": {
+      "es": "Tóxica para gatos y perros.",
+      "en": "Toxic to cats and dogs."
+    },
+    "waterLevel": 2,
+    "sunLevel": 2,
+    "careDifficulty": 3,
+    "image": "images/rubber-plant.png",
+    "scientificName": "Ficus elastica"
+  },
+  {
+    "id": "fiddle-leaf-fig",
+    "name": {
+      "es": "Ficus Lyrata",
+      "en": "Fiddle Leaf Fig"
+    },
+    "toxicForCats": true,
+    "toxicityLevel": 3,
+    "effectsOnCats": {
+      "es": "Salivación, vómitos, irritación en la boca.",
+      "en": "Drooling, vomiting, mouth irritation."
+    },
+    "description": {
+      "es": "Planta muy decorativa con hojas grandes en forma de violín, popular en interiores.",
+      "en": "Decorative plant with large violin-shaped leaves, popular indoors."
+    },
+    "careTips": {
+      "es": "Requiere luz brillante, suelo con buen drenaje y riego moderado.",
+      "en": "Needs bright light, well-draining soil, and moderate watering."
+    },
+    "warnings": {
+      "es": "Tóxica para gatos.",
+      "en": "Toxic to cats."
+    },
+    "waterLevel": 2,
+    "sunLevel": 3,
+    "careDifficulty": 4,
+    "image": "images/ficus-lyrata.png",
+    "scientificName": "Ficus lyrata"
+  },
+  {
+    "id": "ficus-microcarpa",
+    "name": {
+      "es": "Ficus Microcarpa",
+      "en": "Ficus Microcarpa"
+    },
+    "toxicForCats": true,
+    "toxicityLevel": 3,
+    "effectsOnCats": {
+      "es": "Vómitos, diarrea, irritación oral.",
+      "en": "Vomiting, diarrhea, oral irritation."
+    },
+    "description": {
+      "es": "Pequeño árbol ornamental cultivado en interiores o como bonsái. Tronco retorcido y hojas pequeñas brillantes.",
+      "en": "An ornamental small tree grown indoors or as a bonsai. Twisted trunk and shiny small leaves."
+    },
+    "careTips": {
+      "es": "Requiere luz indirecta brillante, riego regular y humedad moderada.",
+      "en": "Needs bright indirect light, regular watering, and moderate humidity."
+    },
+    "warnings": {
+      "es": "Tóxica para gatos.",
+      "en": "Toxic to cats."
+    },
+    "waterLevel": 2,
+    "sunLevel": 2,
+    "careDifficulty": 3,
+    "image": "images/ficus-microcarpa.png",
+    "scientificName": "Ficus microcarpa"
+  },
+  {
+    "id": "swiss-cheese-plant",
+    "name": {
+      "es": "Monstera Deliciosa",
+      "en": "Swiss Cheese Plant"
+    },
+    "toxicForCats": true,
+    "toxicityLevel": 4,
+    "effectsOnCats": {
+      "es": "Dolor e irritación oral intensa, dificultad para tragar, vómitos.",
+      "en": "Severe oral pain, difficulty swallowing, vomiting."
+    },
+    "description": {
+      "es": "Planta tropical popular por sus grandes hojas con perforaciones, conocida como Costilla de Adán.",
+      "en": "Tropical plant popular for its large perforated leaves, also known as Swiss Cheese Plant."
+    },
+    "careTips": {
+      "es": "Prefiere luz indirecta, riego moderado y alta humedad.",
+      "en": "Prefers indirect light, moderate watering, and high humidity."
+    },
+    "warnings": {
+      "es": "Muy tóxica para gatos.",
+      "en": "Highly toxic to cats."
+    },
+    "waterLevel": 2,
+    "sunLevel": 2,
+    "careDifficulty": 2,
+    "image": "images/monstera-deliciosa.png",
+    "scientificName": "Monstera deliciosa"
+  },
+  {
+    "id": "bird-of-paradise",
+    "name": {
+      "es": "Strelitzia (Ave del Paraíso)",
+      "en": "Bird of Paradise"
+    },
+    "toxicForCats": true,
+    "toxicityLevel": 2,
+    "effectsOnCats": {
+      "es": "Náuseas, vómitos, somnolencia.",
+      "en": "Nausea, vomiting, drowsiness."
+    },
+    "description": {
+      "es": "Planta exótica conocida por sus flores que parecen un pájaro en vuelo.",
+      "en": "Exotic plant known for its flowers resembling a bird in flight."
+    },
+    "careTips": {
+      "es": "Necesita mucha luz, incluso sol directo, y riego moderado.",
+      "en": "Needs lots of light, even direct sun, and moderate watering."
+    },
+    "warnings": {
+      "es": "Tóxica para gatos si ingieren hojas o flores.",
+      "en": "Toxic to cats if they ingest leaves or flowers."
+    },
+    "waterLevel": 2,
+    "sunLevel": 3,
+    "careDifficulty": 3,
+    "image": "images/sterilitzia.png",
+    "scientificName": "Strelitzia reginae"
+  },
+  {
+  "id": "pothus",
+  "name": {
+    "es": "Pothus",
+    "en": "Pothos"
+  },
+  "scientificName": "Epipremnum aureum",
+  "toxicForCats": true,
+  "toxicityLevel": 3,
+  "effectsOnCats": {
+    "es": "Irritación oral, vómitos, dificultad para tragar.",
+    "en": "Oral irritation, vomiting, difficulty swallowing."
+  },
+  "description": {
+    "es": "Planta colgante muy popular y resistente, ideal para principiantes.",
+    "en": "A very popular and hardy trailing plant, ideal for beginners."
+  },
+  "careTips": {
+    "es": "Tolera poca luz, aunque prefiere luz indirecta brillante. Riego moderado.",
+    "en": "Tolerates low light but prefers bright indirect light. Moderate watering."
+  },
+  "warnings": {
+    "es": "Tóxica para gatos si mastican las hojas.",
+    "en": "Toxic to cats if they chew the leaves."
+  },
+  "waterLevel": 2,
+  "sunLevel": 2,
+  "careDifficulty": 1,
+  "image": "images/pothus.png"
+},
+{
+  "id": "pilea-peperomioides",
+  "name": {
+    "es": "Pilea Peperomioides",
+    "en": "Chinese Money Plant"
+  },
+  "scientificName": "Pilea peperomioides",
+  "toxicForCats": false,
+  "toxicityLevel": 0,
+  "effectsOnCats": {
+    "es": "Ninguno.",
+    "en": "None."
+  },
+  "description": {
+    "es": "Planta de interior muy decorativa con hojas redondas que parecen monedas.",
+    "en": "A very decorative houseplant with round leaves that resemble coins."
+  },
+  "careTips": {
+    "es": "Prefiere luz indirecta brillante y riego moderado.",
+    "en": "Prefers bright indirect light and moderate watering."
+  },
+  "warnings": {
+    "es": "No es tóxica para gatos.",
+    "en": "Not toxic to cats."
+  },
+  "waterLevel": 2,
+  "sunLevel": 2,
+  "careDifficulty": 2,
+  "image": "images/pilea-peperomioides.png"
+},
+{
+  "id": "kalanchoe",
+  "name": {
+    "es": "Kalanchoe",
+    "en": "Kalanchoe"
+  },
+  "scientificName": "Kalanchoe blossfeldiana",
+  "toxicForCats": true,
+  "toxicityLevel": 3,
+  "effectsOnCats": {
+    "es": "Vómitos, diarrea, ritmo cardíaco anormal.",
+    "en": "Vomiting, diarrhea, abnormal heart rhythm."
+  },
+  "description": {
+    "es": "Planta suculenta muy común en interiores, con flores de colores brillantes.",
+    "en": "A common succulent houseplant with bright colorful flowers."
+  },
+  "careTips": {
+    "es": "Requiere buena luz, incluso sol parcial. Riego moderado, dejando secar la tierra.",
+    "en": "Needs good light, even partial sun. Water moderately, letting soil dry out."
+  },
+  "warnings": {
+    "es": "Tóxica para gatos si la ingieren.",
+    "en": "Toxic to cats if ingested."
+  },
+  "waterLevel": 2,
+  "sunLevel": 3,
+  "careDifficulty": 2,
+  "image": "images/kalanchoe.png"
+},
+{
+  "id": "sunflower",
+  "name": {
+    "es": "Girasol",
+    "en": "Sunflower"
+  },
+  "scientificName": "Helianthus annuus",
+  "toxicForCats": false,
+  "toxicityLevel": 0,
+  "effectsOnCats": {
+    "es": "Ninguno.",
+    "en": "None."
+  },
+  "description": {
+    "es": "Planta anual conocida por sus grandes flores amarillas que giran hacia el sol.",
+    "en": "Annual plant known for its large yellow flowers that turn toward the sun."
+  },
+  "careTips": {
+    "es": "Necesita pleno sol y riego regular. Prefiere suelos fértiles y bien drenados.",
+    "en": "Needs full sun and regular watering. Prefers fertile, well-drained soil."
+  },
+  "warnings": {
+    "es": "No es tóxica para gatos.",
+    "en": "Not toxic to cats."
+  },
+  "waterLevel": 3,
+  "sunLevel": 3,
+  "careDifficulty": 2,
+  "image": "images/sunflower.png"
+},
+{
+  "id": "begonia",
+  "name": {
+    "es": "Begonia",
+    "en": "Begonia"
+  },
+  "scientificName": "Begonia spp.",
+  "toxicForCats": true,
+  "toxicityLevel": 3,
+  "effectsOnCats": {
+    "es": "Irritación oral, vómitos, salivación excesiva.",
+    "en": "Oral irritation, vomiting, excessive drooling."
+  },
+  "description": {
+    "es": "Planta ornamental con flores coloridas y hojas atractivas, común en interiores y jardines.",
+    "en": "Ornamental plant with colorful flowers and attractive foliage, common in homes and gardens."
+  },
+  "careTips": {
+    "es": "Prefiere sombra parcial y riego regular, evitando encharcamientos.",
+    "en": "Prefers partial shade and regular watering, avoiding waterlogging."
+  },
+  "warnings": {
+    "es": "Tóxica para gatos, especialmente las raíces.",
+    "en": "Toxic to cats, especially the roots."
+  },
+  "waterLevel": 2,
+  "sunLevel": 1,
+  "careDifficulty": 2,
+  "image": "images/begonia.png"
+},
+{
+  "id": "rose",
+  "name": {
+    "es": "Rosa",
+    "en": "Rose"
+  },
+  "scientificName": "Rosa spp.",
+  "toxicForCats": false,
+  "toxicityLevel": 0,
+  "effectsOnCats": {
+    "es": "Ninguno, aunque las espinas pueden causar lesiones.",
+    "en": "None, though thorns may cause injuries."
+  },
+  "description": {
+    "es": "Arbusto muy apreciado por sus flores ornamentales y fragantes, símbolo clásico en jardines.",
+    "en": "Shrub highly valued for its ornamental and fragrant flowers, a classic garden symbol."
+  },
+  "careTips": {
+    "es": "Requiere pleno sol, riego regular y poda para florecer adecuadamente.",
+    "en": "Needs full sun, regular watering, and pruning to bloom well."
+  },
+  "warnings": {
+    "es": "No es tóxica para gatos, pero cuidado con las espinas.",
+    "en": "Not toxic to cats, but watch out for thorns."
+  },
+  "waterLevel": 3,
+  "sunLevel": 3,
+  "careDifficulty": 3,
+  "image": "images/rose.png"
+},
+{
+  "id": "geranium",
+  "name": {
+    "es": "Geranio",
+    "en": "Geranium"
+  },
+  "scientificName": "Pelargonium spp.",
+  "toxicForCats": true,
+  "toxicityLevel": 2,
+  "effectsOnCats": {
+    "es": "Irritación gastrointestinal, vómitos, pérdida de apetito.",
+    "en": "Gastrointestinal irritation, vomiting, loss of appetite."
+  },
+  "description": {
+    "es": "Planta ornamental muy popular por sus flores vistosas y facilidad de cultivo.",
+    "en": "Popular ornamental plant known for its showy flowers and ease of cultivation."
+  },
+  "careTips": {
+    "es": "Prefiere sol directo o semisombra y riego moderado.",
+    "en": "Prefers direct sun or partial shade and moderate watering."
+  },
+  "warnings": {
+    "es": "Tóxica para gatos si la mastican.",
+    "en": "Toxic to cats if chewed."
+  },
+  "waterLevel": 2,
+  "sunLevel": 3,
+  "careDifficulty": 2,
+  "image": "images/geranium.png"
+},
+{
+  "id": "snake-plant",
+  "name": {
+    "es": "Sansevieria (Lengua de Suegra)",
+    "en": "Snake Plant"
+  },
+  "scientificName": "Sansevieria trifasciata",
+  "toxicForCats": true,
+  "toxicityLevel": 2,
+  "effectsOnCats": {
+    "es": "Náuseas, vómitos, diarrea.",
+    "en": "Nausea, vomiting, diarrhea."
+  },
+  "description": {
+    "es": "Planta muy resistente, con hojas largas y verticales, ideal para interiores.",
+    "en": "Very hardy plant with long upright leaves, ideal for indoors."
+  },
+  "careTips": {
+    "es": "Tolera poca luz y requiere riego muy escaso.",
+    "en": "Tolerates low light and needs very little watering."
+  },
+  "warnings": {
+    "es": "Tóxica para gatos.",
+    "en": "Toxic to cats."
+  },
+  "waterLevel": 1,
+  "sunLevel": 1,
+  "careDifficulty": 1,
+  "image": "images/snake-plant.png"
+},
+{
+  "id": "calathea",
+  "name": {
+    "es": "Calathea",
+    "en": "Calathea"
+  },
+  "scientificName": "Calathea spp.",
+  "toxicForCats": false,
+  "toxicityLevel": 0,
+  "effectsOnCats": {
+    "es": "Ninguno.",
+    "en": "None."
+  },
+  "description": {
+    "es": "Planta tropical de hojas decorativas con patrones llamativos, muy usada en interiores.",
+    "en": "Tropical plant with decorative leaves and striking patterns, very common indoors."
+  },
+  "careTips": {
+    "es": "Prefiere sombra parcial, alta humedad y riego regular.",
+    "en": "Prefers partial shade, high humidity, and regular watering."
+  },
+  "warnings": {
+    "es": "No es tóxica para gatos.",
+    "en": "Not toxic to cats."
+  },
+  "waterLevel": 3,
+  "sunLevel": 1,
+  "careDifficulty": 3,
+  "image": "images/calathea.png"
+}
+
+
+
+
+]
