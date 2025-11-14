@@ -26,7 +26,7 @@
     "waterLevel": 1,
     "sunLevel": 3,
     "careDifficulty": 2,
-    "image": "/images/aloe-vera.png",
+    "image": "images/aloe-vera.png",
     "scientificName": "Aloe vera"
   },
   {
@@ -266,7 +266,7 @@
     "waterLevel": 2,
     "sunLevel": 2,
     "careDifficulty": 2,
-    "image": "/images/monstera-deliciosa.png",
+    "image": "images/monstera-deliciosa.png",
     "scientificName": "Monstera deliciosa"
   },
   {
@@ -296,7 +296,7 @@
     "waterLevel": 2,
     "sunLevel": 3,
     "careDifficulty": 3,
-    "image": "/images/sterilitzia.png",
+    "image": "images/sterilitzia.png",
     "scientificName": "Strelitzia reginae"
   },
   {

@@ -62,8 +62,8 @@ a {
     
     
 }
-.ficus-elastica {
-    background-image: url('../assets/preview/ficus_elastica.png');
+.rubber-plant {
+    background-image: url('../assets/preview/rubber-plant.png');
         background-position-x: 25px;
 
 
@@ -152,9 +152,9 @@ a {
     mask-image: url('../assets/preview/areca-palm.png');
     } 
   
-.main__recent.ficus-elastica::after {
-    -webkit-mask-image: url('../assets/preview/ficus-elastica.png');
-    mask-image: url('../assets/preview/ficus-elastica.png');
+.main__recent.rubber-plant::after {
+    -webkit-mask-image: url('../assets/preview/rubber-plant.png');
+    mask-image: url('../assets/preview/rubber-plant.png');
     }     
 
 .main__recent.ficus-lyrata::after {
@@ -225,4 +225,8 @@ ul .main__other {
         text-align: center;
         margin-top: 20pt;
         margin-bottom: 5pt;
+    }
+
+    .not-found {
+        text-align: center;
     }

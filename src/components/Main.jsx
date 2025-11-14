@@ -17,7 +17,7 @@ function Main() {
                     </li>
                 
                 
-                    <li className="main__common ficus-elastica">
+                    <li className="main__common rubber-plant">
                         <HashLink  className="all-clickable" smooth to="/plants#rubber-plant">
                             <p>Rubber Plant</p>
                         </HashLink>
@@ -121,7 +121,7 @@ function Main() {
             <HashLink smooth to="/plants#snake-plant"><li>Snake Plant</li></HashLink>
             <HashLink smooth to="/plants#calathea"><li>Calathea</li></HashLink>
         </ul>
-        <div className="main__other-more"><HashLink smooth to="/plants">Más</HashLink></div>
+        <div className="main__other-more"><HashLink smooth to="/plants">More</HashLink></div>
     </main>
   )
 }

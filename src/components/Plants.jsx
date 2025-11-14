@@ -16,7 +16,14 @@ const handleBack = () => {
   
   return (
     <>
+
+    {filteredPlants.length === 0 ? (<p className="not-found">Nothing found</p>)
+    : (
+
     <ul>
+
+    
+      
       {
         filteredPlants.map((plant, index ) => {
           return (
@@ -35,8 +42,8 @@ const handleBack = () => {
                 <p><strong>Symptoms: </strong>{plant.effectsOnCats.en}</p>
                 <h3>How to Care</h3>
                 <div className="plant-chars">
-                  <p><strong><IoIosWater color="#4682B4" size="30px"/> </strong>Water: {plant.waterLevel}</p>
-                  <p><strong><MdLightMode color="#FFCC00" size="30px" /> </strong>Light: {plant.sunLevel}</p>
+                  <p><strong><IoIosWater color="#4682B4" size="30px"/> </strong> {plant.waterLevel}</p>
+                  <p><strong><MdLightMode color="#FFCC00" size="30px" /> </strong> {plant.sunLevel}</p>
                   <p><strong><SiGoogleanalytics color="#89D63D" size="30px"/> </strong>Difficulty: {plant.careDifficulty}</p>
                 </div>  
 
@@ -47,6 +54,9 @@ const handleBack = () => {
         })
       }
     </ul>
+
+    )}
+
     <div className="plants_nav">
       <HiArrowCircleUp
       size="50px" 

@@ -3,16 +3,24 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import Plants from './components/Plants';
-import { useState } from 'react';
-import data from './assets/data/plants.json'
+import { useState, useEffect } from 'react';
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  const plants = data;
+  const [plants, setPlants] = useState([])
   const [searchPlant, setSearchPlant] = useState("");
 
+  // Cargar JSON desde public/data/plants.json
+  useEffect(() => {
+    fetch("data/plants.json")
+      .then((result) => result.json())
+      .then((data) => setPlants(data))
+      .catch((error) => console.error("Error cargando plants.json:", error));
+  }, []);
+
   const filteredPlants = plants.filter(plant => plant.name.en.toLowerCase().includes(searchPlant.toLowerCase()));
+
 
 
   return (

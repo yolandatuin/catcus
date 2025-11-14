@@ -14,9 +14,10 @@ function Header({searchPlant, setSearchPlant}) {
   return (
     <header>
       <div className="header_top">
-        <Link to="/" className="h1_link"><h1>Catcus</h1></Link>
-        <img src="/cat.svg" alt="Header image of the website" />
+        <Link to="/" className="h1_link"><h1>Catcus</h1>
+        <img src="/catcus/cat.svg" alt="Header image of the website" />
         <h2>Discover if a plant is toxic for your cats</h2>
+        </Link>
         <form className="search" action="">
           <input 
           className="search-field"
