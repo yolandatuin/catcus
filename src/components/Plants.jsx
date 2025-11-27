@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { IoIosWater } from "react-icons/io";
 import { MdLightMode } from "react-icons/md";
 import { SiGoogleanalytics } from "react-icons/si";
+import { FaRegHeart, FaHeart } from "react-icons/fa";
 
 function Plants({filteredPlants, resetFilter}) {
 const navigate = useNavigate(); //Es un hook, por lo que debes crear un componente para usarlo. No puedes usarlo directamente. 
@@ -33,7 +34,7 @@ const handleBack = () => {
                 <img src={plant.image} alt="" />
               </div>
               <div className="card__titles">
-                <h1>{plant.name.en}</h1>
+                <h1><FaRegHeart /> {plant.name.en}</h1>
                 <h2>{plant.scientificName}</h2>
               </div>
               <div className="card__description"> 

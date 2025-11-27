@@ -8,7 +8,8 @@ It helps cat owners discover whether a plant is toxic for their cats.
 ## ✨ Features  
 
 - 🔍 **Search bar** – check if a plant is toxic by typing its name.  
-- 🌿 **Common plants section** – quick access to the most popular plants.  
+- 🌿 **Common plants section** – quick access to the most popular plants. 
+- 🎨 **Purple or Yellow background** – depending if the plant is toxic or not. 
 - 🕒 **Recent searches** – will store user searches in the future (WIP 🚧).  
 - 🌱 **Other plants / More** – browse an extended list of plants.  
 - 📱 **Responsive design** – works smoothly on desktop, tablet, and mobile.  
@@ -36,14 +37,6 @@ Data about plants is stored in a **local JSON file**, acting as a small database
 - ⚡ [Vite](https://vitejs.dev/) – fast development environment  
 - ⚛️ [React](https://react.dev/) – UI library  
 - 🎨 SCSS – modular styling  
-
----
-
-## 📸 Screenshots  
-
-_(Add screenshots here if you have them)_  
-
----
 
 ## 🔮 Roadmap  
 
