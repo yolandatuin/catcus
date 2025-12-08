@@ -4,9 +4,12 @@ import { HashLink } from "react-router-hash-link";
 
 
 
-function Main() {
+
+function Main({favs}) {
+
   return (
     <main>
+        <p>{favs}</p>
         <h2>Most common plants</h2>
             <ul className="main__ul_common">
                 
@@ -45,8 +48,8 @@ function Main() {
                 
                 
             </ul>
-        <h2>Most recent search</h2>
-        <ul className="main__ul_recent-search">
+        <h2>Favorite plants</h2>
+        <ul className="main__ul_favs">
             <li className="main__recent aloe-vera">
                     <HashLink  className="all-clickable" smooth to="/plants#aloe-vera">
                     <h3>Aloe Vera</h3>

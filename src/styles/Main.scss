@@ -88,7 +88,7 @@ a {
     position: relative;
     z-index: 2;
 }
-.main__ul_recent-search {
+.main__ul_favs {
     display: flex;
     gap: 1rem;
     justify-content: space-between;
@@ -109,14 +109,14 @@ a {
     }
 
 }
-.main__ul_recent-search .main__recent:nth-child(odd) {
+.main__ul_favs .main__recent:nth-child(odd) {
   background-color: $purple-light; 
 }
 
-.main__ul_recent-search .main__recent:nth-child(even) {
+.main__ul_favs .main__recent:nth-child(even) {
   background-color: $yellow-light; 
 }
-.main__ul_recent-search .main__recent:hover {
+.main__ul_favs .main__recent:hover {
     background-color: $green-light;
 }
 
@@ -177,11 +177,11 @@ a {
     mask-image: url('../assets/preview/pothus.png');
     }  
 
-  .main__ul_recent-search .main__recent:nth-child(odd)::after {
+  .main__ul_favs .main__recent:nth-child(odd)::after {
   background-color: $principal-purple; /* color para los impares */
 }
 
-.main__ul_recent-search .main__recent:nth-child(even)::after {
+.main__ul_favs .main__recent:nth-child(even)::after {
   background-color: $principal-yellow; /* color para los pares */
 }
 

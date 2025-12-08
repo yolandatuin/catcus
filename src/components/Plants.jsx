@@ -7,14 +7,29 @@ import { MdLightMode } from "react-icons/md";
 import { SiGoogleanalytics } from "react-icons/si";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 
-function Plants({filteredPlants, resetFilter}) {
+
+
+function Plants({filteredPlants, resetFilter, setFavs, favs}) {
 const navigate = useNavigate(); //Es un hook, por lo que debes crear un componente para usarlo. No puedes usarlo directamente. 
+
+
+
 
 const handleBack = () => {
   resetFilter();
   navigate(-1);
 }
   
+const favClick = (event) => {
+  const name = event.currentTarget.getAttribute("name");
+  setFavs(previousFavs => 
+    previousFavs.includes(name)
+    ? previousFavs.filter(f => f !== name)
+    : [...previousFavs, name]
+  );
+  
+};
+
   return (
     <>
 
@@ -34,7 +49,12 @@ const handleBack = () => {
                 <img src={plant.image} alt="" />
               </div>
               <div className="card__titles">
-                <h1><FaRegHeart /> {plant.name.en}</h1>
+                <h1>
+                  {favs.includes(plant.scientificName)
+                    ? <FaHeart name={plant.scientificName} onClick={favClick}/>
+                    : <FaRegHeart name={plant.scientificName} onClick={favClick}/>
+                  }
+                  {plant.name.en}</h1>
                 <h2>{plant.scientificName}</h2>
               </div>
               <div className="card__description"> 

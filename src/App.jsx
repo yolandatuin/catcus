@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   const filteredPlants = plants.filter(plant => plant.name.en.toLowerCase().includes(searchPlant.toLowerCase()));
-
+  const [favs, setFavs] = useState([]);
 
 
   return (
@@ -28,8 +28,8 @@ function App() {
         <Header searchPlant={searchPlant} setSearchPlant={setSearchPlant} />
 
         <Routes>
-          <Route path="/" element={<Main/>}/>
-          <Route path="/plants" element={<Plants filteredPlants={filteredPlants} resetFilter={() => setSearchPlant("")}/>}/>
+          <Route path="/" element={<Main favs={favs}/>}/>
+          <Route path="/plants" element={<Plants setFavs={setFavs} favs={favs} filteredPlants={filteredPlants} resetFilter={() => setSearchPlant("")}/>}/>
         </Routes>  
         
         <Footer/>
