@@ -5,11 +5,12 @@ import { HashLink } from "react-router-hash-link";
 
 
 
-function Main({favs}) {
+function Main({favs, plants}) {
+
 
   return (
     <main>
-        <p>{favs}</p>
+        
         <h2>Most common plants</h2>
             <ul className="main__ul_common">
                 
@@ -50,67 +51,22 @@ function Main({favs}) {
             </ul>
         <h2>Favorite plants</h2>
         <ul className="main__ul_favs">
-            <li className="main__recent aloe-vera">
-                    <HashLink  className="all-clickable" smooth to="/plants#aloe-vera">
-                    <h3>Aloe Vera</h3>
-                    <ul className="main__recent_description">
-                        <li className="recent">Dificultad: Media</li>
-                        <li>Luz: Media</li>
-                        <li>Agua: Media</li>
+            {plants
+            .filter(plant => favs.includes(plant.scientificName))
+            .slice(0,5)
+            .map((plant,index) => (
+                <li key={index} className={`main__recent ${plant.name.en.toLowerCase().replace(/ /g, "-")}`}>
+                    <HashLink  className="all-clickable" smooth to={`/plants#${plant.name.en.toLowerCase().replace(/ /g, "-")}`}>
+                    <h3>{plant.name.en}</h3>
+                    <ul>
+                        <li>Difficulty: {plant.careDifficulty}</li>
+                        <li>Light: {plant.sunLevel}</li>
+                        <li>Water: {plant.waterLevel}</li>
                     </ul>
-                </HashLink>
-
-            </li>
-            <li className="main__recent areca-palm">
-                <HashLink  className="all-clickable" smooth to="/plants#areca-palm">
-                <h3>Areca Palm</h3>
-                <ul className="main__recent_description">
-                    <li>Dificultad: Fácil</li>
-                    <li>Luz: Media</li>
-                    <li>Agua: Media</li>
-                </ul>
-                </HashLink>
-            </li>
-            <li className="main__recent ficus-lyrata">
-                <HashLink  className="all-clickable" smooth to="/plants#fiddle-leaf-fig">
-                <h3>Ficus Lyrata</h3>
-                <ul className="main__recent_description">
-                    <li>Dificultad: Media</li>
-                    <li>Luz: Media</li>
-                    <li>Agua: Media</li>
-                </ul>
-                </HashLink>
-            </li>
-            <li className="main__recent spider-plant">
-                <HashLink  className="all-clickable" smooth to="/plants#spider-plant">
-                <h3>Spider Plant</h3>
-                <ul className="main__recent_description">
-                    <li>Dificultad: Media</li>
-                    <li>Luz: Media</li>
-                    <li>Agua: Media</li> 
-                </ul>
-                </HashLink>
-            </li>
-            <li className="main__recent peace-lily">
-                <HashLink  className="all-clickable" smooth to="/plants#peace-lily">
-                <h3>Peace Lily</h3>
-                <ul className="main__recent_description">
-                    <li>Dificultad: Media</li>
-                    <li>Luz: Media</li>
-                    <li>Agua: Media</li>
-                </ul>
-                </HashLink>
-            </li>
-            <li className="main__recent pothus">
-                <HashLink  className="all-clickable" smooth to="/plants#pothus">
-                <h3>Pothus</h3>
-                <ul className="main__recent_description">
-                    <li>Dificultad: Media</li>
-                    <li>Luz: Media</li>
-                    <li>Agua: Media</li>
-                </ul>
-                </HashLink>
-            </li>
+                    </HashLink>
+                </li>
+            ))}
+            
         </ul>
         <h2>Otras plantas</h2>
         <ul className="main__other">

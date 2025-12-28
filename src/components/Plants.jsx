@@ -22,6 +22,7 @@ const handleBack = () => {
   
 const favClick = (event) => {
   const name = event.currentTarget.getAttribute("name");
+  console.log(name)
   setFavs(previousFavs => 
     previousFavs.includes(name)
     ? previousFavs.filter(f => f !== name)
