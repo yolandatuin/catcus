@@ -29,7 +29,7 @@ function App() {
         <Header searchPlant={searchPlant} setSearchPlant={setSearchPlant} />
 
         <Routes>
-          <Route path="/" element={<Main favs={favs} plants={plants} filteredPlants={filteredPlants}/>}/>
+          <Route path="/" element={<Main favs={favs} plants={plants} />}/>
           <Route path="/plants" element={<Plants setFavs={setFavs} favs={favs} filteredPlants={filteredPlants} resetFilter={() => setSearchPlant("")}/>}/>
         </Routes>  
         

@@ -34,9 +34,9 @@ function Main({favs, plants}) {
                     </li>
                 
                 
-                    <li className="main__common lavanda">
-                        <HashLink  className="all-clickable" smooth to="/plants#lavender">
-                            <p>Lavender</p>
+                    <li className="main__common pothos">
+                        <HashLink  className="all-clickable" smooth to="/plants#pothos">
+                            <p>Pothos</p>
                         </HashLink>
                     </li>
                 
@@ -51,7 +51,24 @@ function Main({favs, plants}) {
             </ul>
         <h2>Favorite plants</h2>
         <ul className="main__ul_favs">
-            {plants
+            {favs.length === 0 ? 
+            (plants
+            .slice(0,5)
+            .map((plant,index) => (
+                <li key={index} className={`main__recent ${plant.name.en.toLowerCase().replace(/ /g, "-")}`}>
+                    <HashLink  className="all-clickable" smooth to={`/plants#${plant.name.en.toLowerCase().replace(/ /g, "-")}`}>
+                    <h3>{plant.name.en}</h3>
+                    <ul>
+                        <li>Difficulty: {plant.careDifficulty}</li>
+                        <li>Light: {plant.sunLevel}</li>
+                        <li>Water: {plant.waterLevel}</li>
+                    </ul>
+                    </HashLink>
+                </li>
+            ))
+            ) : (
+            
+            plants
             .filter(plant => favs.includes(plant.scientificName))
             .slice(0,5)
             .map((plant,index) => (
@@ -65,10 +82,11 @@ function Main({favs, plants}) {
                     </ul>
                     </HashLink>
                 </li>
-            ))}
+            ))
+            )}
             
         </ul>
-        <h2>Otras plantas</h2>
+        <h2>Other plants</h2>
         <ul className="main__other">
             <HashLink smooth to="/plants#pothus"><li>Pothus</li></HashLink>
             <HashLink smooth to="/plants#pilea-peperomioides"><li>Pilea Peperomioides</li></HashLink>

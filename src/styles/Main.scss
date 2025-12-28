@@ -65,22 +65,36 @@ a {
 .rubber-plant {
     background-image: url('../assets/preview/rubber-plant.png');
         background-position-x: 25px;
-
-
 }
-.lavanda {
-    background-image: url('../assets/preview/lavanda.png');
+
+.fiddle-leaf-fig {
+    background-image: url('../assets/preview/ficus-lyrata.png');
+        background-position-x: 25px;
 }
-.monstera-deliciosa {
+.ficus-microcarpa {
+    background-image: url('../assets/preview/ficus-microcarpa.png');
+        background-position-x: 100px;
+}
+.swiss-cheese-plant {
     background-image: url('../assets/preview/monstera-deliciosa.png');
-    background-position-y: 50px;
+    
 }
+
+.lavender {
+    background-image: url('../assets/preview/lavender.png');
+    background-position-x: 100px;   
+}
+.pothos {
+    background-image: url('../assets/preview/pothus.png');
+}
+
 
 .sterlitizia {
     background-image: url('../assets/preview/sterilitzia.png');
     background-clip: content-box;
 
 }
+
 
 
 /*RECENT SEARCH LIST*/
@@ -147,6 +161,11 @@ a {
     mask-image: url('../assets/preview/aloe-vera.png');
     }  
 
+.main__recent.swiss-cheese-plant::after {
+    -webkit-mask-image: url('../assets/preview/monstera-deliciosa.png');
+    mask-image: url('../assets/preview/monstera-deliciosa.png');
+    }  
+
 .main__recent.areca-palm::after {
     -webkit-mask-image: url('../assets/preview/areca-palm.png');
     mask-image: url('../assets/preview/areca-palm.png');
@@ -171,12 +190,64 @@ a {
     -webkit-mask-image: url('../assets/preview/peace-lily.png');
     mask-image: url('../assets/preview/peace-lily.png');
     }  
+.main__recent.kalanchoe::after {
+    -webkit-mask-image: url('../assets/preview/kalanchoe.png');
+    mask-image: url('../assets/preview/kalanchoe.png');
+    } 
 
-.main__recent.pothus::after {
+.main__recent.chinese-money-plant::after {
+    -webkit-mask-image: url('../assets/preview/pilea-peperomioides.png');
+    mask-image: url('../assets/preview/pilea-peperomioides.png');
+    } 
+.main__recent.geranium::after {
+    -webkit-mask-image: url('../assets/preview/geranium.png');
+    mask-image: url('../assets/preview/geranium.png');
+    }
+.main__recent.geranium::after {
+    -webkit-mask-image: url('../assets/preview/geranium.png');
+    mask-image: url('../assets/preview/geranium.png');
+    }
+.main__recent.snake-plant::after {
+    -webkit-mask-image: url('../assets/preview/snake-plant.png');
+    mask-image: url('../assets/preview/snake-plant.png');
+    } 
+.main__recent.pothos::after {
     -webkit-mask-image: url('../assets/preview/pothus.png');
     mask-image: url('../assets/preview/pothus.png');
     }  
 
+.main__recent.rose::after {
+    -webkit-mask-image: url('../assets/preview/rose.png');
+    mask-image: url('../assets/preview/rose.png');
+    }  
+.main__recent.begonia::after {
+    -webkit-mask-image: url('../assets/preview/begonia.png');
+    mask-image: url('../assets/preview/begonia.png');
+    }  
+.main__recent.sunflower::after {
+    -webkit-mask-image: url('../assets/preview/sunflower.png');
+    mask-image: url('../assets/preview/sunflower.png');
+    }
+
+.main__recent.lavender::after {
+    -webkit-mask-image: url('../assets/preview/lavender.png');
+    mask-image: url('../assets/preview/lavender.png');
+    }  
+    .main__recent.calathea::after {
+    -webkit-mask-image: url('../assets/preview/calathea.png');
+    mask-image: url('../assets/preview/calathea.png');
+    } 
+.main__recent.fiddle-leaf-fig::after {
+    -webkit-mask-image: url('../assets/preview/ficus-lyrata.png');
+    mask-image: url('../assets/preview/ficus-lyrata.png');
+    }  
+.main__recent.ficus-microcarpa::after {
+    -webkit-mask-image: url('../assets/preview/ficus-microcarpa');
+    mask-image: url('../assets/preview/ficus-microcarpa');
+    }  
+
+
+    
   .main__ul_favs .main__recent:nth-child(odd)::after {
   background-color: $principal-purple; /* color para los impares */
 }
