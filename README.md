@@ -12,6 +12,7 @@ It helps cat owners discover whether a plant is toxic for their cats.
 - 🎨 **Purple or Yellow background** – depending if the plant is toxic or not. 
 - 🕒 **Recent searches** – will store user searches in the future (WIP 🚧).  
 - 🌱 **Other plants / More** – browse an extended list of plants.  
+- ❤️ **Favorites** – Add in favorites if you love a plant. It will show up in the favorites list. 
 - 📱 **Responsive design** – works smoothly on desktop, tablet, and mobile.  
 - 🎨 **Custom SCSS styling** – each component has its own style file.  
 - 🖼️ **Images from Unsplash** – high-quality visuals.  
@@ -42,6 +43,8 @@ Data about plants is stored in a **local JSON file**, acting as a small database
 
 - ✅ Create base components (Header, Main, Plants, Footer).  
 - ✅ Add search functionality.  
+- ✅ Heart icon available to add a plant to your favorites. 
+- ✅ Update the favorites list in home with your favorites plants. 
 - 🚧 Make **Most Recent Search** truly functional.  
 - 🚧 Expand the JSON database with more plants.  
 - 🚧 Add more advanced filtering options.  
